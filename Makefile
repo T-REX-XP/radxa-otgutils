@@ -9,7 +9,6 @@ all:
 	fpm -s dir -t deb -n $(NAME) -v $(VERSION) \
 		-a all \
 		--deb-priority optional --category utils \
-		--depends android-tools-adbd \
 		--deb-field "Multi-Arch: foreign" \
 		--deb-field "Replaces: $(NAME)" \
 		--deb-field "Conflicts: $(NAME)" \
